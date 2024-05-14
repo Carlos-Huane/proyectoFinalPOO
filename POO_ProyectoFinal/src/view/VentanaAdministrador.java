@@ -243,7 +243,7 @@ public class VentanaAdministrador extends javax.swing.JFrame {
 
         bg1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 410, 260, 40));
 
-        bg.add(bg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        bg.add(bg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 530));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
