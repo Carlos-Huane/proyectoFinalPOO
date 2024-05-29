@@ -8,12 +8,12 @@ package view;
  *
  * @author Maria
  */
-public class VentanaEmpleadoInicio extends javax.swing.JFrame {
+public class VentanaEmpleado_1 extends javax.swing.JFrame {
 
     /**
      * Creates new form VentanaAdministrador
      */
-    public VentanaEmpleadoInicio() {
+    public VentanaEmpleado_1() {
         initComponents();
     }
 
@@ -89,7 +89,6 @@ public class VentanaEmpleadoInicio extends javax.swing.JFrame {
         jLabel4.setText("PRECIO U.");
         bg1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 170, -1, -1));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
         jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255), 2));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +113,6 @@ public class VentanaEmpleadoInicio extends javax.swing.JFrame {
         jLabel5.setText("CÓDIGO DE PRODUCTO");
         bg1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
         jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255), 2));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -328,14 +326,22 @@ public class VentanaEmpleadoInicio extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaEmpleadoInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaEmpleado_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaEmpleadoInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaEmpleado_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaEmpleadoInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaEmpleado_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaEmpleadoInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaEmpleado_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -348,7 +354,7 @@ public class VentanaEmpleadoInicio extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VentanaEmpleadoInicio().setVisible(true);
+                new VentanaEmpleado_1().setVisible(true);
             }
         });
     }

@@ -72,7 +72,6 @@ public class VentanaInicio extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
         jTextField2.setBorder(null);
 
         jLabel4.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
@@ -83,7 +82,6 @@ public class VentanaInicio extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(120, 120, 120));
         jLabel5.setText("CONTRASEÑA");
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
         jTextField3.setBorder(null);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -125,7 +123,7 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Images/supermarket.png"))); // NOI18N
         jLabel2.setText("jLabel2");
-        bg1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 270, -1));
+        bg1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 270, -1));
 
         bg.add(bg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 530));
 
