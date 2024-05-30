@@ -7,7 +7,10 @@ public class Usuario {
         this.usuario = usuario;
         this.contraseña = contraseña;
     }
-
+    
+    public String verificarUsuario(String usuario, String contraseña){
+        return "te retorna el tipo de usuario (admin, empleado, error";
+    }
     public String getUsuario() {
         return usuario;
     }
