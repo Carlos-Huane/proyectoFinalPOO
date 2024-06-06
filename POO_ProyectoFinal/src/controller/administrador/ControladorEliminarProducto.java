@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controller.administrador;
 
-/**
- *
- * @author hp
- */
-public class ControladorEliminarProducto {
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import view.Admin4_eliminar;
+
+public class ControladorEliminarProducto implements ActionListener{
+    private Admin4_eliminar ventanaEliminar = new Admin4_eliminar();
     
+    public ControladorEliminarProducto(){
+        ventanaEliminar.setVisible(true);
+    }
+    
+    public void actionPerformed(ActionEvent e){
+       
+    }
 }

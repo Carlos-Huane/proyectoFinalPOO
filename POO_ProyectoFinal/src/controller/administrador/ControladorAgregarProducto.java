@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controller.administrador;
 
-/**
- *
- * @author hp
- */
-public class ControladorAgregarProducto {
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import view.Admin2_agregar;
+public class ControladorAgregarProducto implements ActionListener{
+    private Admin2_agregar ventanaAgregar = new Admin2_agregar();
     
+    public ControladorAgregarProducto(){
+        ventanaAgregar.setVisible(true);
+    }
+    
+    public void actionPerformed(ActionEvent e){
+       
+    }
 }

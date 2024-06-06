@@ -47,7 +47,7 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnCobrar = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
 
@@ -233,17 +233,17 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Images/minus.png"))); // NOI18N
         bg1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(193, 211, 254));
-        jButton3.setForeground(new java.awt.Color(0, 0, 255));
-        jButton3.setText("COBRAR");
-        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255), 2));
-        jButton3.setMargin(new java.awt.Insets(2, 30, 3, 14));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnCobrar.setBackground(new java.awt.Color(193, 211, 254));
+        btnCobrar.setForeground(new java.awt.Color(0, 0, 255));
+        btnCobrar.setText("COBRAR");
+        btnCobrar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255), 2));
+        btnCobrar.setMargin(new java.awt.Insets(2, 30, 3, 14));
+        btnCobrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnCobrarActionPerformed(evt);
             }
         });
-        bg1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 460, 180, 40));
+        bg1.add(btnCobrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 460, 180, 40));
 
         jButton4.setBackground(new java.awt.Color(193, 211, 254));
         jButton4.setForeground(new java.awt.Color(255, 0, 0));
@@ -297,9 +297,9 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnCobrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCobrarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnCobrarActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
@@ -362,8 +362,8 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
     private javax.swing.JPanel bg1;
+    public javax.swing.JButton btnCobrar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
