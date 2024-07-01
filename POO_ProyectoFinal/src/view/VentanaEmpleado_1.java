@@ -1,10 +1,21 @@
 package view;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
 public class VentanaEmpleado_1 extends javax.swing.JFrame {
+    public JTable tableProductos;
+    public DefaultTableModel tableModel;
+    
     public VentanaEmpleado_1() {
         initComponents();
+        tableProductos = new JTable();
+        tableModel = new DefaultTableModel(new Object[]{"Orden", "Código", "Nombre", "Cantidad", "Precio U."}, 0);
+        tableProductos.setModel(tableModel);
+        JScrollPane scrollPane = new JScrollPane(tableProductos); // Agregar la tabla a un JScrollPane
+        bg1.add(scrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 620, 240)); // Ajustar posición y tamaño
+        
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -193,6 +204,7 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
+       
     }//GEN-LAST:event_btnAgregarActionPerformed
 
     private void txtCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodigoActionPerformed
