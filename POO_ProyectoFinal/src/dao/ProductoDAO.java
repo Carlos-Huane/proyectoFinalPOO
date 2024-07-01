@@ -2,9 +2,13 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import model.Conexion;
 import model.Producto;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProductoDAO {
 
@@ -105,5 +109,36 @@ public class ProductoDAO {
             }
         }
         return false;
+    }
+    public List<Producto> obtenerTodosProductos() {
+        List<Producto> listaProductos = new ArrayList<>();
+        Conexion conexionBD = new Conexion();
+        Connection con = conexionBD.obtenerConexion();
+
+        if (con != null) {
+            try {
+                String query = "SELECT * FROM Productos";
+                PreparedStatement pstmt = con.prepareStatement(query);
+                ResultSet rs = pstmt.executeQuery();
+
+                while (rs.next()) {
+                    Producto producto = new Producto(
+                        rs.getString("Codigo"),
+                        rs.getString("Nombre"),
+                        rs.getFloat("Precio_de_venta"),
+                        rs.getFloat("Precio_de_compra"),
+                        rs.getInt("Cantidad"),
+                        rs.getString("Marca")
+                    );
+
+                    listaProductos.add(producto);
+                }
+
+                con.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return listaProductos;
     }
 }
