@@ -12,7 +12,7 @@ public class ListaProductos {
    public float total(){
        float total=0;
        for (int i=0; i<cantidadProductos; i++){
-           total = total + listaProductos[i].getPrecio()*listaProductos[i].getCantidad();
+           total = total + listaProductos[i].getPrecioVenta()*listaProductos[i].getCantidad();
        }
        return total;
    }

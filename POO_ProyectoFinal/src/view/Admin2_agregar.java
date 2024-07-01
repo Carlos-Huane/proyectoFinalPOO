@@ -29,7 +29,7 @@ public class Admin2_agregar extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        btnGuardar = new javax.swing.JButton();
+        btnAgregarProducto = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -75,7 +75,7 @@ public class Admin2_agregar extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(101, 88, 245));
         jPanel2.setPreferredSize(new java.awt.Dimension(400, 50));
 
-        btnGuardar.setText("Guardar");
+        btnAgregarProducto.setText("Agregar");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -83,14 +83,14 @@ public class Admin2_agregar extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(163, 163, 163)
-                .addComponent(btnGuardar)
+                .addComponent(btnAgregarProducto)
                 .addContainerGap(165, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(21, Short.MAX_VALUE)
-                .addComponent(btnGuardar)
+                .addComponent(btnAgregarProducto)
                 .addContainerGap())
         );
 
@@ -265,7 +265,7 @@ public class Admin2_agregar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnAgregarProducto;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -4,8 +4,8 @@ import model.Producto;
 public class GestorProducto extends Producto{
     private float precioCompra;
     
-    public GestorProducto(String nombre, String codigo, int cantidadProductos, float precioVenta, String marca, float precioCompra){
-        super(codigo, nombre, cantidadProductos, precioVenta, marca);
+    public GestorProducto(String codigo, String nombre, float precioVenta, float precioCompra, int cantidad, String marca){
+        super(codigo, nombre, precioVenta, precioCompra, cantidad, marca);
         this.precioCompra = precioCompra;
     }
     

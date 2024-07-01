@@ -1,17 +1,20 @@
 package model;
+
 public class Producto {
     
     private String codigo;
     private String nombre;
     private int cantidad;
-    private float precio;
+    private float precioVenta;
+    private float precioCompra;
     private String marca;
     
-    public Producto(String codigo, String nombre, int cantidad, float precio, String marca) {
+    public Producto(String codigo, String nombre, float precioVenta, float precioCompra, int cantidad, String marca) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.cantidad = cantidad;
-        this.precio = precio;
+        this.precioVenta = precioVenta;
+        this.precioCompra = precioCompra;
         this.marca = marca;
     }
 
@@ -39,13 +42,22 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    public float getPrecio() {
-        return precio;
+    public float getPrecioVenta() {
+        return precioVenta;
     }
 
-    public void setPrecio(float precio) {
-        this.precio = precio;
+    public void setPrecioVenta(float precioVenta) {
+        this.precioVenta = precioVenta;
     }
+
+    public float getPrecioCompra() {
+        return precioCompra;
+    }
+
+    public void setPrecioCompra(float precioCompra) {
+        this.precioCompra = precioCompra;
+    }
+
     public String getMarca() {
         return marca;
     }
@@ -53,7 +65,13 @@ public class Producto {
     public void setMarca(String marca) {
         this.marca = marca;
     }
-    public void mostrarInfoProducto(){
-        System.out.println("el producto es: "+this.nombre);
+
+    public void mostrarInfoProducto() {
+        System.out.println("Producto: " + this.nombre);
+        System.out.println("Código: " + this.codigo);
+        System.out.println("Precio de Venta: " + this.precioVenta);
+        System.out.println("Precio de Compra: " + this.precioCompra);
+        System.out.println("Cantidad: " + this.cantidad);
+        System.out.println("Marca: " + this.marca);
     }
 }

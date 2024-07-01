@@ -26,7 +26,7 @@ public class Conexion {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             con = DriverManager.getConnection(url, user, password);
-            JOptionPane.showMessageDialog(null, "Éxito en conexión");
+            //JOptionPane.showMessageDialog(null, "Éxito en conexión");
             return con;
         } catch(Exception e) {
             JOptionPane.showMessageDialog(null, "Error en la conexión: " + e.getMessage());
