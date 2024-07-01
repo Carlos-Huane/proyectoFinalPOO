@@ -1,29 +1,45 @@
 package controller.login;
 
 import controller.administrador.ControladorAdmin;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import controller.empleado.ControladorVendedor;
+import dao.UsuarioDAO;
+import model.Usuario;
 import view.VentanaInicio;
 
-import controller.empleado.ControladorVendedor;
-import model.Usuario;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class ControladorInicio implements ActionListener{
-    private VentanaInicio ventanaInicio;
-    private Usuario usuario = new Usuario("", "");
-    public ControladorInicio(VentanaInicio ventanaInicio){
-        this.ventanaInicio = ventanaInicio;
+import javax.swing.JOptionPane;
+
+public class ControladorInicio implements ActionListener {
+    private VentanaInicio ventanaInicio = new VentanaInicio();
+    private UsuarioDAO usuarioDAO = new UsuarioDAO();
+
+    public ControladorInicio() {
         this.ventanaInicio.btnLogin.addActionListener(this);
-        ventanaInicio.setVisible(true); //PARA QUE APAREZCA LA VENTANA INICIO
-        
+        ventanaInicio.setVisible(true); // Mostrar la ventana de inicio
     }
-    public void actionPerformed(ActionEvent e){
-       if (e.getSource() == ventanaInicio.btnLogin) {
-            System.out.println("hola mundo");
-            
-            //aca debemos establecer que atravez de una llamada a la base de datos diriga a la ventana admin o empleado
-            //ControladorVendedor controladorVendedor = new ControladorVendedor();
-            ControladorAdmin controladorAdmin = new ControladorAdmin();
+
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == ventanaInicio.btnLogin) {
+            String nombreUsuario = ventanaInicio.txtUsuario.getText();
+            String contraseña = ventanaInicio.txtContraseña.getText();
+
+            Usuario usuario = usuarioDAO.obtenerUsuarioPorCredenciales(nombreUsuario, contraseña);
+
+            if (usuario != null) {
+                if ("administrador".equalsIgnoreCase(usuario.getRol())) {
+                    // Redirigir a la ventana del administrador
+                    new ControladorAdmin();
+                } else if ("vendedor".equalsIgnoreCase(usuario.getRol())) {
+                    // Redirigir a la ventana del vendedor
+                    new ControladorVendedor();
+                }
+                ventanaInicio.dispose(); // Cerrar la ventana de login
+            } else {
+                // Mostrar un mensaje de error
+                JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos.");
+            }
         }
     }
 }

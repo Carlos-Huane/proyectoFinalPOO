@@ -11,6 +11,6 @@ public class ControladorAgregarMercancia implements ActionListener{
         ventana.setVisible(true);
     }
     public void actionPerformed(ActionEvent e){
-       
+     
     }
 }
