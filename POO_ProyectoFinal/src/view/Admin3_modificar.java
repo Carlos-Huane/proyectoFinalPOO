@@ -15,6 +15,7 @@ public class Admin3_modificar extends javax.swing.JFrame {
      */
     public Admin3_modificar() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

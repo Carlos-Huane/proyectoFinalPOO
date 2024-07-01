@@ -15,6 +15,7 @@ public class Admin5_mercancia extends javax.swing.JFrame {
      */
     public Admin5_mercancia() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

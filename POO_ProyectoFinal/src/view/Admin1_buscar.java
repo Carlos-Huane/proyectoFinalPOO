@@ -11,7 +11,7 @@ public class Admin1_buscar extends javax.swing.JFrame {
     public JTable tablaProductos;
     public Admin1_buscar() {
         initComponents();
-        
+        setLocationRelativeTo(null);
         // Inicialización de la ventana y otros componentes
         /** 
         tablaProductos = new JTable();
@@ -27,7 +27,7 @@ public class Admin1_buscar extends javax.swing.JFrame {
         // Crea un JScrollPane y añade la tabla a él
         JScrollPane scrollPane = new JScrollPane(tablaProductos);
         bg1.add(scrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 500, 230));
-
+        
     }
 
     /**

@@ -15,6 +15,7 @@ public class Admin4_eliminar extends javax.swing.JFrame {
      */
     public Admin4_eliminar() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

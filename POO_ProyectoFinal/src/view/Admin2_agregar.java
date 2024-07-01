@@ -15,6 +15,7 @@ public class Admin2_agregar extends javax.swing.JFrame {
      */
     public Admin2_agregar() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

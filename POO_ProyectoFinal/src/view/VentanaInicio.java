@@ -15,6 +15,7 @@ public class VentanaInicio extends javax.swing.JFrame {
      */
     public VentanaInicio() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

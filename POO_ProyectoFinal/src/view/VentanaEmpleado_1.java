@@ -8,6 +8,7 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
     
     public VentanaEmpleado_1() {
         initComponents();
+        setLocationRelativeTo(null);
         tableProductos = new JTable();
         tableModel = new DefaultTableModel(new Object[]{"Orden", "Código", "Nombre", "Cantidad", "Precio U."}, 0);
         tableProductos.setModel(tableModel);
