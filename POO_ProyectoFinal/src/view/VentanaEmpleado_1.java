@@ -38,8 +38,8 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnCobrar = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnCancelarVenta = new javax.swing.JButton();
+        btnCancelarProducto = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -159,29 +159,29 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
         });
         bg1.add(btnCobrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 460, 180, 40));
 
-        jButton4.setBackground(new java.awt.Color(193, 211, 254));
-        jButton4.setForeground(new java.awt.Color(255, 0, 0));
-        jButton4.setText("      CANCELAR VENTA");
-        jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0), 2));
-        jButton4.setMargin(new java.awt.Insets(2, 30, 3, 14));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnCancelarVenta.setBackground(new java.awt.Color(193, 211, 254));
+        btnCancelarVenta.setForeground(new java.awt.Color(255, 0, 0));
+        btnCancelarVenta.setText("      CANCELAR VENTA");
+        btnCancelarVenta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0), 2));
+        btnCancelarVenta.setMargin(new java.awt.Insets(2, 30, 3, 14));
+        btnCancelarVenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnCancelarVentaActionPerformed(evt);
             }
         });
-        bg1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 180, 40));
+        bg1.add(btnCancelarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 180, 40));
 
-        jButton5.setBackground(new java.awt.Color(193, 211, 254));
-        jButton5.setForeground(new java.awt.Color(255, 69, 0));
-        jButton5.setText("         CANCELAR PRODUCTO");
-        jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 69, 0), 2));
-        jButton5.setMargin(new java.awt.Insets(2, 30, 3, 14));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnCancelarProducto.setBackground(new java.awt.Color(193, 211, 254));
+        btnCancelarProducto.setForeground(new java.awt.Color(255, 69, 0));
+        btnCancelarProducto.setText("         CANCELAR PRODUCTO");
+        btnCancelarProducto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 69, 0), 2));
+        btnCancelarProducto.setMargin(new java.awt.Insets(2, 30, 3, 14));
+        btnCancelarProducto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnCancelarProductoActionPerformed(evt);
             }
         });
-        bg1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, 180, 40));
+        bg1.add(btnCancelarProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, 180, 40));
 
         bg.add(bg1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 530));
 
@@ -216,13 +216,13 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCobrarActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnCancelarVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarVentaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnCancelarVentaActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnCancelarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarProductoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnCancelarProductoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,9 +278,9 @@ public class VentanaEmpleado_1 extends javax.swing.JFrame {
     private javax.swing.JPanel bg;
     private javax.swing.JPanel bg1;
     public javax.swing.JButton btnAgregar;
+    public javax.swing.JButton btnCancelarProducto;
+    public javax.swing.JButton btnCancelarVenta;
     public javax.swing.JButton btnCobrar;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

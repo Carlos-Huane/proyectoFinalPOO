@@ -17,8 +17,6 @@ public class ListaProductos {
        return total;
    }
    
-   public void cobrar(){
-       //método para llamar a la base de datos y enviarle la lista de productos comprada
-   }
+   
 }
 

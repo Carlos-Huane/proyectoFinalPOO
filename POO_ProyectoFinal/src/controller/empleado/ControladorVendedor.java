@@ -24,6 +24,8 @@ public class ControladorVendedor implements ActionListener {
         ventanaEmpleado_1.setVisible(true);
         this.ventanaEmpleado_1.btnCobrar.addActionListener(this);
         this.ventanaEmpleado_1.btnAgregar.addActionListener(this);
+        this.ventanaEmpleado_1.btnCancelarProducto.addActionListener(this);
+        this.ventanaEmpleado_1.btnCancelarVenta.addActionListener(this);
     }
 
     @Override
@@ -34,6 +36,12 @@ public class ControladorVendedor implements ActionListener {
         }
         if (e.getSource() == ventanaEmpleado_1.btnAgregar) {
             agregarProducto();
+        }
+        if (e.getSource() == ventanaEmpleado_1.btnCancelarVenta) {
+            cancelarVenta();
+        }
+        if (e.getSource() == ventanaEmpleado_1.btnCancelarProducto) {
+            
         }
     }
 
@@ -97,5 +105,10 @@ public class ControladorVendedor implements ActionListener {
             
         }
     }
-
+    private void cancelarVenta() {
+    listaProductos.clear(); // Limpiar la lista de productos
+    ventanaEmpleado_1.tableModel.setRowCount(0); // Limpiar todas las filas de la tabla
+    ventanaEmpleado_1.txtCodigo.setText(""); // Reiniciar el campo de texto del código
+    ventanaEmpleado_1.txtCantidad.setText(""); // Reiniciar el campo de texto de la cantidad
+    }
 }

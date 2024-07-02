@@ -41,4 +41,30 @@ public class VendedorDAO {
 
         return producto;
     }
+    // Nuevo método para actualizar la cantidad de un producto
+    public boolean actualizarCantidadProducto(String codigo, int nuevaCantidad) {
+        Conexion conexionBD = new Conexion();
+        Connection con = conexionBD.obtenerConexion();
+
+        boolean exito = false;
+
+        try {
+            String query = "UPDATE productos SET Cantidad = ? WHERE Codigo = ?";
+            PreparedStatement ps = con.prepareStatement(query);
+            ps.setInt(1, nuevaCantidad);
+            ps.setString(2, codigo);
+
+            int filasAfectadas = ps.executeUpdate();
+            if (filasAfectadas > 0) {
+                exito = true;
+            }
+            ps.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try { con.close(); } catch (Exception e) { e.printStackTrace(); }
+        }
+
+        return exito;
+    }
 }
