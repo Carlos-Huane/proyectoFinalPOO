@@ -9,8 +9,8 @@ import dao.ProductoDAO;
 import view.Admin1_buscar;
 
 public class ControladorAdmin implements ActionListener {
-    private Admin1_buscar ventanaAdmin = new Admin1_buscar();
-    private ProductoDAO productoDAO = new ProductoDAO(); // Instancia de tu DAO
+    private Admin1_buscar ventanaAdmin = new Admin1_buscar(); //instancia para usar los métodos requeridos
+    private ProductoDAO productoDAO = new ProductoDAO(); // Instancia para usar su método (obtenerTodosProductos) actualizarTablaProductos definida al final de esta clase
 
     public ControladorAdmin() {
         ventanaAdmin.setVisible(true);
@@ -19,9 +19,8 @@ public class ControladorAdmin implements ActionListener {
         this.ventanaAdmin.btnModificarProducto.addActionListener(this);
         this.ventanaAdmin.btnAgregarMercancia.addActionListener(this);
         this.ventanaAdmin.btnActualizarTabla.addActionListener(this);
-       
-        // Llama a este método al iniciar para cargar los productos
-        actualizarTablaProductos();
+         
+        actualizarTablaProductos();// Llama a este método al iniciar para cargar los productos
     }
 
     @Override
@@ -42,7 +41,9 @@ public class ControladorAdmin implements ActionListener {
             actualizarTablaProductos();
         }
     }
-
+    
+    //este método se define aquí mismo porque no te abre una ventana como los otros botones, 
+    //por lo tanto no tiene una clase controlador como los demás.
     private void actualizarTablaProductos() {
         // Obtener lista de productos desde el DAO
         List<Producto> listaProductos = productoDAO.obtenerTodosProductos();
