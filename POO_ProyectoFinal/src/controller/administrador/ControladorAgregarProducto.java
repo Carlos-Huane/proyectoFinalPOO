@@ -17,13 +17,15 @@ public class ControladorAgregarProducto implements ActionListener {
     }
     
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == ventanaAgregar.btnAgregarProducto) {
-            String codigo = ventanaAgregar.txtCodigo.getText();
-            String nombre = ventanaAgregar.txtNombre.getText();
-            float precioVenta = Float.parseFloat(ventanaAgregar.txtPrecioVenta.getText());
-            float precioCompra = Float.parseFloat(ventanaAgregar.txtPrecioCompra.getText());
-            int cantidad = Integer.parseInt(ventanaAgregar.txtCantidad.getText());
-            String marca = ventanaAgregar.txtMarca.getText();
+        if (e.getSource() == ventanaAgregar.btnAgregarProducto) { //si se presiona el boton, se realiza el guardado de los datos ingresados en los campos de texto
+            
+            // a continuación se guardarán las variables previac conversión a String
+            String codigo = ventanaAgregar.txtCodigo.getText(); 
+            String nombre = ventanaAgregar.txtNombre.getText(); 
+            float precioVenta = Float.parseFloat(ventanaAgregar.txtPrecioVenta.getText()); 
+            float precioCompra = Float.parseFloat(ventanaAgregar.txtPrecioCompra.getText()); 
+            int cantidad = Integer.parseInt(ventanaAgregar.txtCantidad.getText()); 
+            String marca = ventanaAgregar.txtMarca.getText(); 
             
             // Crear un objeto Producto con los datos ingresados
             Producto producto = new Producto(codigo, nombre, precioVenta, precioCompra, cantidad, marca);
